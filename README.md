@@ -1,5 +1,7 @@
 # easyTravel-Builder
 
+![easyTravel Logo](https://github.com/dynatrace-innovationlab/easyTravel-Builder/blob/images/easyTravel-logo.png)
+
 This project builds easyTravel deployment artefacts of the [Dynatrace easyTravel](https://community.dynatrace.com/community/display/DL/Demo+Applications+-+easyTravel) demo application for the following components:
 
 ## Application Components
