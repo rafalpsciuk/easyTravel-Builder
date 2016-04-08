@@ -15,9 +15,9 @@ This project builds easyTravel deployment artefacts of the [Dynatrace easyTravel
 
 ## How to build easyTravel?
 
-### Option A: build-easytravel.sh
+### Option A: build.sh
 
-The `build-easytravel.sh` script builds easyTravel deployment artefacts into a directory `deploy` inside your current working directory, by default. You can override the default behavior by providing the following *environment variables* to the script:
+The `build.sh` script builds easyTravel deployment artefacts into a directory `deploy` inside your current working directory, by default. You can override the default behavior by providing the following *environment variables* to the script:
 
 | Environment Variable  | Defaults                    | Description
 |:----------------------|:----------------------------|:-----------
@@ -30,7 +30,7 @@ The `build-easytravel.sh` script builds easyTravel deployment artefacts into a d
 #### Example: create deployment artefacts in `./deploy`:
 
 ```
-./build-easytravel.sh
+./build.sh
 ```
 
 #### Example: create deployment artefacts in `./deploy` and no sub-folders:
@@ -39,7 +39,7 @@ The `build-easytravel.sh` script builds easyTravel deployment artefacts into a d
 ET_BB_DEPLOY_HOME=. \
 ET_CF_DEPLOY_HOME=. \
 ET_LG_DEPLOY_HOME=. \
-./build-easytravel.sh
+./build.sh
 ```
 
 #### Example: create deployment artefacts in `.` and no sub-folders:
@@ -49,12 +49,12 @@ ET_DEPLOY_HOME=. \
 ET_BB_DEPLOY_HOME=. \
 ET_CF_DEPLOY_HOME=. \
 ET_LG_DEPLOY_HOME=. \
-./build-easytravel.sh
+./build.sh
 ```
 
-### Option B: `build-easytravel-in-docker.sh`
+### Option B: `build-in-docker.sh`
 
-Use `build-easytravel-in-docker.sh` if you want to build easyTravel deployment artefacts in a build environment that runs in Docker, so you don't have to set up your own. Deployment artefacts can be found in a directory `deploy` inside your current working directory. You can override the default behavior by providing the following *environment variables* to the script:
+Use `build-in-docker.sh` if you want to build easyTravel deployment artefacts in a build environment that runs in Docker, so you don't have to set up your own. Deployment artefacts can be found in a directory `deploy` inside your current working directory. You can override the default behavior by providing the following *environment variables* to the script:
 
 | Environment Variable  | Defaults                    | Description
 |:----------------------|:----------------------------|:-----------
@@ -67,7 +67,7 @@ Use `build-easytravel-in-docker.sh` if you want to build easyTravel deployment a
 #### Example: create deployment artefacts in `./deploy`:
 
 ```
-./build-easytravel-in-docker.sh
+./build-in-docker.sh
 ```
 
 #### Example: create deployment artefacts in `./deploy` and no sub-folders:
@@ -76,7 +76,7 @@ Use `build-easytravel-in-docker.sh` if you want to build easyTravel deployment a
 ET_BB_DEPLOY_HOME=. \
 ET_CF_DEPLOY_HOME=. \
 ET_LG_DEPLOY_HOME=. \
-./build-easytravel-in-docker.sh
+./build-in-docker.sh
 ```
 
 #### Example: create deployment artefacts in `.` and no sub-folders:
@@ -86,7 +86,7 @@ ET_DEPLOY_HOME=. \
 ET_BB_DEPLOY_HOME=. \
 ET_CF_DEPLOY_HOME=. \
 ET_LG_DEPLOY_HOME=. \
-./build-easytravel-in-docker.sh
+./build-in-docker.sh
 ```
 
 ## License
