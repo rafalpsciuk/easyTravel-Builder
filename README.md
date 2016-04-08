@@ -4,8 +4,8 @@ This project builds easyTravel deployment artefacts of the [Dynatrace easyTravel
 
 ## Application Components
 
-| Component   | Description
-|:------------|------------
+| Component   | Deployment Artefact
+|:------------|--------------------
 | repository  | A pre-populated travel database (MongoDB) as `easyTravel-mongodb-db.tar.gz`.
 | backend     | The easyTravel Business Backend (Java) as `backend.war`
 | frontend    | The easyTravel Customer Frontend (Java) as `frontend.war`.
