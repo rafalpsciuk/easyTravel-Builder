@@ -6,12 +6,12 @@ This project builds deployment artefacts of the [Dynatrace easyTravel](https://c
 
 ## Application Components
 
-| Component   | Deployment Artefact
-|:------------|--------------------
-| repository  | A pre-populated travel database (MongoDB) as `easyTravel-mongodb-db.tar.gz`.
-| backend     | The easyTravel Business Backend (Java) as `backend.war`
-| frontend    | The easyTravel Customer Frontend (Java) as `frontend.war`.
-| loadgen     | A synthetic UEM load generator (Java) as `uemload.jar` plus dependencies in `loadgen.tar.gz`.
+| Component | Deployment Artefact
+|:----------|:-------------------
+| mongodb   | A pre-populated travel database (MongoDB) as `easyTravel-mongodb-db.tar.gz`.
+| backend   | The easyTravel Business Backend (Java) as `backend.war`
+| frontend  | The easyTravel Customer Frontend (Java) as `frontend.war`.
+| loadgen   | A synthetic UEM load generator (Java) as `uemload.jar` plus dependencies in `loadgen.tar.gz`.
 
 ## How to build easyTravel?
 
