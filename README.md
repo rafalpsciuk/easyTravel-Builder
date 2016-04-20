@@ -89,6 +89,17 @@ ET_LG_DEPLOY_HOME=. \
 ./build-in-docker.sh
 ```
 
+## How to configure easyTravel?
+
+Aligning with principles of [12factor apps](http://12factor.net/config), one of them which requires strict separation of configuration from code, easyTravel can be configured at startup time via the following environment variables:
+
+| Environment Variable  | Defaults         | Description
+|:----------------------|:-----------------|:-----------
+| ET_BACKEND_URL        | http://localhost | A URL to the application server that runs easyTravel's Business Backend.
+| ET_DATABASE_USER      | labuser          | The username of the database easyTravel's Business Backend shall connect to.
+| ET_DATABASE_PASSWORD  | labpass          | The password of the database easyTravel's Business Backend shall connect to.
+| ET_DATABASE_LOCATION  | localhost:27017  | The location of the database easyTravel's Business Backend shall connect to.
+
 ## License
 
 Licensed under the MIT License. See the LICENSE file for details.
