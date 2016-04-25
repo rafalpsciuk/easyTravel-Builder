@@ -1,5 +1,5 @@
 #!/bin/bash
-ET_SRC_URL=${ET_SRC_URL:-"https://s3.amazonaws.com/easytravel/dT63/easyTravel-2.0.0.2217-src.zip"}
+ET_SRC_URL=${ET_SRC_URL:-"https://s3.amazonaws.com/easytravel/dT63/easyTravel-2.0.0.2244-src.zip"}
 
 ET_SRC_HOME=/tmp
 ET_SRC_CF_HOME="${ET_SRC_HOME}/CustomerFrontend"
