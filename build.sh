@@ -32,6 +32,7 @@ cp -v ./customer/frontend.war ${ET_CF_DEPLOY_HOME}
 mkdir -p "${ET_LG_DEPLOY_HOME}"
 tar -cvzf "${ET_LG_DEPLOY_HOME}/loadgen.tar.gz" \
           ./lib/commons-cli-*.jar \
+          ./lib/commons-io-*.jar \
           ./lib/commons-lang*.jar \
           ./lib/commons-logging-*.jar \
           ./lib/guava-*.jar \
@@ -47,5 +48,6 @@ tar -cvzf "${ET_LG_DEPLOY_HOME}/loadgen.tar.gz" \
           ./lib/xml-apis-*.jar \
           ./resources/easyTravel.properties \
           ./resources/easyTravelConfig.properties \
+          ./resources/easyTravelThirdPartyResourcesizes.properties \
           ./com.dynatrace.easytravel.commons.jar \
           ./uemload.jar
