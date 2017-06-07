@@ -14,5 +14,5 @@ docker run --rm \
   --env ET_BB_DEPLOY_HOME="${ET_BB_DEPLOY_HOME}" \
   --env ET_CF_DEPLOY_HOME="${ET_CF_DEPLOY_HOME}" \
   --env ET_LG_DEPLOY_HOME="${ET_LG_DEPLOY_HOME}" \
-  monostream/apache-ant \
-  "${DOCKER_CONTAINER_BUILD_SH_PREFIX}/build.sh"
+  frekele/apache-ant \
+  "${DOCKER_CONTAINER_WORKDIR}/${DOCKER_CONTAINER_BUILD_SH_PREFIX}/build.sh"
