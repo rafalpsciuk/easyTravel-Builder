@@ -21,7 +21,7 @@ The `build.sh` script builds easyTravel deployment artefacts into a directory `d
 
 | Environment Variable  | Defaults                    | Description
 |:----------------------|:----------------------------|:-----------
-| ET_SRC_URL            | https://s3.amazonaws.com/easytravel/dT63/easyTravel-2.0.0.2244-src.zip | A URL to an easyTravel source distribution .zip file.
+| ET_SRC_URL            | http://dexya6d9gs5s.cloudfront.net/latest/dynatrace-easytravel-src.zip | A URL to an easyTravel source distribution .zip file.
 | ET_DEPLOY_HOME        | ./deploy                    | A directory to contain the easyTravel deployment artefacts.
 | ET_BB_DEPLOY_HOME     | ./backend                   | A directory under `${ET_DEPLOY_HOME}` to contain the easyTravel Business Backend deployment artefact (the artefact will be located in `${ET_DEPLOY_HOME}/${ET_BB_DEPLOY_HOME}`.
 | ET_CF_DEPLOY_HOME     | ./frontend                  | A directory under `${ET_DEPLOY_HOME}` to contain the easyTravel Customer Frontend deployment artefact (the artefact will be located in `${ET_DEPLOY_HOME}/${ET_CF_DEPLOY_HOME}`.
@@ -58,7 +58,7 @@ Use `build-in-docker.sh` if you want to build easyTravel deployment artefacts in
 
 | Environment Variable  | Defaults                    | Description
 |:----------------------|:----------------------------|:-----------
-| ET_SRC_URL            | "https://s3.amazonaws.com/easytravel/dT63/easyTravel-2.0.0.2244-src.zip" | A URL to an easyTravel source distribution.
+| ET_SRC_URL            | http://dexya6d9gs5s.cloudfront.net/latest/dynatrace-easytravel-src.zip | A URL to an easyTravel source distribution.
 | ET_DEPLOY_HOME        | ./deploy                    | A directory to contain the easyTravel deployment artefacts under the current working directory.
 | ET_BB_DEPLOY_HOME     | ./backend                   | A directory under `${ET_DEPLOY_HOME}` to contain the easyTravel Business Backend deployment artefact (the artefact will be located in `${ET_DEPLOY_HOME}/${ET_BB_DEPLOY_HOME}`.
 | ET_CF_DEPLOY_HOME     | ./frontend                  | A directory under `${ET_DEPLOY_HOME}` to contain the easyTravel Customer Frontend deployment artefact (the artefact will be located in `${ET_DEPLOY_HOME}/${ET_CF_DEPLOY_HOME}`.
