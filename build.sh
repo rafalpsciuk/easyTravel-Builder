@@ -1,5 +1,5 @@
 #!/bin/bash
-ET_SRC_URL=${ET_SRC_URL:-"https://s3.amazonaws.com/easytravel/dT63/easyTravel-2.0.0.2244-src.zip"}
+ET_SRC_URL=${ET_SRC_URL:-"http://dexya6d9gs5s.cloudfront.net/latest/dynatrace-easytravel-src.zip"}
 
 ET_SRC_HOME=/tmp
 ET_SRC_CF_HOME="${ET_SRC_HOME}/CustomerFrontend"
@@ -17,8 +17,10 @@ cd "${ET_SRC_HOME}"
 # Download easyTravel sources
 curl -L -o easyTravel-src.zip "${ET_SRC_URL}"
 
-# Unarchive and build easyTravel sources
+# Unarchive and build easyTravel sources while setting up some env vars
 unzip ./easyTravel-src.zip
+export ANT_OPTS="-Dfile.encoding=UTF8"
+export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8
 ant -f ./Distribution war
 cd "${ET_SRC_HOME}/Distribution/dist"
 
@@ -49,5 +51,6 @@ tar -cvzf "${ET_LG_DEPLOY_HOME}/loadgen.tar.gz" \
           ./resources/easyTravel.properties \
           ./resources/easyTravelConfig.properties \
           ./resources/easyTravelThirdPartyResourcesizes.properties \
+          ./resources/Users.txt \
           ./com.dynatrace.easytravel.commons.jar \
           ./uemload.jar
