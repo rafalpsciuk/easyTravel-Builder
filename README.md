@@ -96,8 +96,8 @@ Aligning with principles of [12factor apps](http://12factor.net/config), one of 
 | Environment Variable  | Defaults         | Description
 |:----------------------|:-----------------|:-----------
 | ET_BACKEND_URL        | http://localhost | The URL to easyTravel's Business Backend.
-| ET_DATABASE_USER      | labuser          | The username of the database easyTravel's Business Backend shall connect to.
-| ET_DATABASE_PASSWORD  | labpass          | The password of the database easyTravel's Business Backend shall connect to.
+| ET_DATABASE_USER      | etAdmin          | The username of the database easyTravel's Business Backend shall connect to.
+| ET_DATABASE_PASSWORD  | adminadmin       | The password of the database easyTravel's Business Backend shall connect to.
 | ET_DATABASE_LOCATION  | localhost:27017  | The location of the database the easyTravel Business Backend shall connect to.
 
 ## License
